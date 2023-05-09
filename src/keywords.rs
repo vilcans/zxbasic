@@ -94,7 +94,7 @@ pub enum Keyword {
 }
 
 impl Keyword {
-    pub fn as_byte(&self) -> u8 {
+    pub fn to_byte(&self) -> u8 {
         match self {
             Self::Rnd => 165,
             Self::Inkey => 166,

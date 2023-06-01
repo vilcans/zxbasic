@@ -2,8 +2,10 @@
 name = "zxbasic"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT OR Apache-2.0"
+categories = ["development-tools", "emulators"]
+keywords = ["zx-spectrum", "8-bit", "basic"]
+description = "Generates BASIC code for the Sinclar ZX Spectrum programmatically"
 
 [dependencies]
 zxnumber = { git = "https://github.com/vilcans/zxnumber.git" }

@@ -15,13 +15,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  - <csr-id-da767a9cb561739e179045b363b7df56c53a5f34/> Use zxnumber from crates.io instead of github
  - <csr-id-321a99d1d2833aacd124909b4a3f03d7d604d9a9/> Metadata for crates.io
+ - <csr-id-8ae5d0f048dfd925cdcd6eda50ea8f5658872282/> Add CHANGELOG.md
 
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
- - 10 commits contributed to the release over the course of 22 calendar days.
- - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 11 commits contributed to the release over the course of 22 calendar days.
+ - 4 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
 ### Commit Details
@@ -31,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Add CHANGELOG.md ([`8ae5d0f`](https://github.com/vilcans/zxbasic/commit/8ae5d0f048dfd925cdcd6eda50ea8f5658872282))
     - Use zxnumber from crates.io instead of github ([`da767a9`](https://github.com/vilcans/zxbasic/commit/da767a9cb561739e179045b363b7df56c53a5f34))
     - Metadata for crates.io ([`321a99d`](https://github.com/vilcans/zxbasic/commit/321a99d1d2833aacd124909b4a3f03d7d604d9a9))
     - README.md ([`a88e689`](https://github.com/vilcans/zxbasic/commit/a88e689a9548f82ce62401c73b4ca37c2cc1ca33))

@@ -43,6 +43,13 @@ impl Token {
     }
 }
 
+impl From<Keyword> for Token {
+    /// Convert a [`Keyword`] into the corresponding [`Token::Keyword`].
+    fn from(val: Keyword) -> Self {
+        Token::Keyword(val)
+    }
+}
+
 #[cfg(test)]
 mod test {
     use super::*;
@@ -74,5 +81,11 @@ mod test {
             Token::Symbol(b"abc".to_vec()).to_bytes(),
             &[0x61, 0x62, 0x63]
         );
+    }
+
+    #[test]
+    fn keyword_into_token() {
+        let t: Token = Keyword::Bright.into();
+        assert_eq!(t, Token::Keyword(Keyword::Bright));
     }
 }

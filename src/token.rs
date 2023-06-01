@@ -1,17 +1,25 @@
+//! Handles tokens that make up a BASIC statement or line.
+
 use std::io::Write;
 
 use crate::keywords::Keyword;
 use zxnumber::ZXNumber;
 
+/// A part of a BASIC statement.
 #[derive(Debug, PartialEq)]
 pub enum Token {
+    /// A BASIC keyword
     Keyword(Keyword),
+    /// A string literal within quotes.
     String(Vec<u8>),
+    /// A number, encoded as the number in ASCII followed by its binary representation.
     Number(f64),
+    /// Literal data. Can be used to write any other kind of data to the program.
     Symbol(Vec<u8>),
 }
 
 impl Token {
+    /// Get this token as bytes as represented in Spectrum memory or on tape.
     pub fn to_bytes(&self) -> Vec<u8> {
         match self {
             Token::Keyword(keyword) => vec![keyword.to_byte()],
